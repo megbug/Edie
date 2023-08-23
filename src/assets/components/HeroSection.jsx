@@ -4,7 +4,7 @@ import Contact from './Contact'
 const HeroSection = () => {
     return (
         <>
-        <section className='heroSection'>
+        <section className='heroSection' id='heroSection'>
             <article>
                 <p>Unhappy with your Website?</p>
                 <h2 className='headline'>We create beautiful and fast web sevices</h2>

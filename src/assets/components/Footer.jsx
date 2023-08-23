@@ -8,7 +8,7 @@ import Contact from './Contact';
 const Footer = () => {
     return (
         <>
-            <section className='footer'>
+            <section className='footer' id='footer'>
                 <nav>
                     <Link>Home</Link>
                     <Link>Services</Link>

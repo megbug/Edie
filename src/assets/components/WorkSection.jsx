@@ -7,7 +7,7 @@ import juice from '../images/juice-product.png';
 
 const WorkSection = () => {
     return (
-        <section className='workSection'>
+        <section className='workSection' id='work'>
             <h3 className='subHeadline'>Good design means good business</h3>
             <div>
                 <article>

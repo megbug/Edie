@@ -5,7 +5,7 @@ import brackets from '../images/brackets.svg'
 const ServiceSection = () => {
     return (
         <>
-            <section className='serviceSection'>
+            <section className='serviceSection' id='services'>
                 <h3 className='subHeadline'>We offer high demand services</h3>
                 <div className='serviceDiv'>
                     <img src={pen} alt="" />
