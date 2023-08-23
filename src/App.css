@@ -1,3 +1,26 @@
+@font-face {
+    font-family: 'heebo';
+    src: url('./assets/fonts/Heebo-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'poppins400';
+    src: url('./assets/fonts/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: 'poppins500';
+    src: url('./assets/fonts/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family: 'montserrat';
+    src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+.heebo {
+    font-family: 'heebo';
+    font-size: 3.6rem;
+    font-weight: 800;
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
