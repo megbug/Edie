@@ -15,23 +15,77 @@
     src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf');
 }
 
-.heebo {
-    font-family: 'heebo';
-    font-size: 3.6rem;
-    font-weight: 800;
-}
-
 * {
     margin: 0;
     box-sizing: border-box;
 }
 
-.header {
-    background-color: beige;
+html {
+    font-size: 10px;
 }
 
-.heroSection {
-    background-color: plum;
+.heebo {
+    font-family: 'heebo';
+    font-size: 3.6rem;
+    font-weight: 800;
+    color: #333333;
+}
+
+.headline{
+    font-family: 'poppins500';
+    font-size: 4.8rem;
+    line-height: 7.2rem;
+    color: #333333;
+}
+
+/* ###### Navbar ###### */
+.header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5% 4%;
+    position: sticky;
+    top: 0;
+}
+
+.nav a {
+    font-family: poppins500;
+    font-size: 2.2rem;
+    text-decoration: none;
+    padding-left: 7rem;
+    color: #333333;
+}
+
+/* ###### HeroSection ###### */
+
+.heroSection h6 {
+    font-family: 'poppins500';
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: #2D9CDB;
+    margin: 1.5% 14%;
+}
+
+.heroContainer article {
+    /* background-color: plum; */
+    margin: 0 auto;
+    text-align: left;
+    margin: 3% 14%;
+    width: 40%;
+}
+
+.heroContainer article:nth-of-type(2) {
+    width: 30%;
+}
+
+
+
+.heroContainer img {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 1.8rem;
 }
 
 .contact {
