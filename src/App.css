@@ -3,12 +3,20 @@
     src: url('./assets/fonts/Heebo-VariableFont_wght.ttf');
 }
 @font-face {
+    font-family: 'poppins300';
+    src: url('./assets/fonts/Poppins-Light.ttf');
+}
+@font-face {
     font-family: 'poppins400';
     src: url('./assets/fonts/Poppins-Regular.ttf');
 }
 @font-face {
     font-family: 'poppins500';
     src: url('./assets/fonts/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family: 'poppins700';
+    src: url('./assets/fonts/Poppins-Bold.ttf');
 }
 @font-face {
     font-family: 'montserrat';
@@ -35,6 +43,12 @@ html {
     font-family: 'poppins500';
     font-size: 4.8rem;
     line-height: 7.2rem;
+    color: #333333;
+}
+
+.subHeadline{
+    font-family: 'poppins500';
+    font-size: 3.6rem;
     color: #333333;
 }
 
@@ -75,12 +89,6 @@ html {
     width: 40%;
 }
 
-.heroContainer article:nth-of-type(2) {
-    width: 30%;
-}
-
-
-
 .heroContainer img {
     display: block;
     margin: 0 auto;
@@ -88,20 +96,115 @@ html {
     border-radius: 1.8rem;
 }
 
-.contact {
-    background-color: dodgerblue;
+.heroContainer article:nth-of-type(2) {
+    width: 30%;
 }
 
+.heroContainer p {
+    font-family: 'poppins400';
+    font-size: 1.8rem;
+    color: #4f4f4f;
+    width: 85%;
+    padding: 3rem 0;
+}
+
+/* ###### ServiceSection ###### */
+
 .serviceSection {
-    background-color: purple;
+    margin: 25vh 7%;
+}
+
+.serviceSection h3 {
+    width: 30%;
+}
+
+.serviceSection article {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .serviceSection div {
-    background-color: lightpink;
+    margin: 10vh 0 5vh 0;
+    padding: 5vh;
+    width: 30%;
 }
 
+.serviceSection div:hover {
+    border-radius: 2.4rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07);
+}
+
+.serviceSection div h4 {
+    font-family: 'poppins700';
+    font-size: 2.4rem;
+    color: #333333;
+    padding: 2rem 0;
+}
+
+.serviceSection div p {
+    font-family: 'poppins400';
+    font-size: 1.6rem;
+    color: #4f4F4F;
+}
+
+.serviceSection button { 
+    background-color: #E0E0E0;
+    color: #828282;
+    margin: 5vh 0 1vh 0;
+    font-size: 1.8rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 1.2rem;
+}
+
+.serviceSection button:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07);
+}
+
+/* ###### WorkSection ###### */
 .workSection {
-    background-color: orange;
+    margin: 15vh 7%;
+}
+
+.workSection h3 {
+    width: 30%;
+}
+
+.imgDiv {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imgDiv article:nth-of-type(1) {
+    padding-top: 15vh;
+}
+
+.imgDiv img {
+    border-radius: 2.4rem;
+}
+
+.imgDiv h5 {
+    font-family: 'poppins300';
+    font-size: 1.4rem;
+    color:#828282;
+    padding: 2rem 0 2rem 1rem;
+}
+
+.imgDiv h6 {
+    font-family: 'poppins500';
+    font-size: 2.4rem;
+    color:#333333;
+    padding: 0 0 2rem 1rem;
+}
+
+.workSection a {
+    font-family: 'poppins500';
+    font-size: 2.4rem;
+    color: #2D9CDB;
+    text-decoration: none;
+    display: block;
+    text-align: right;
 }
 
 .aboutSection {
@@ -114,4 +217,49 @@ html {
 
 .footer {
     background-color: darkblue;
+}
+
+/* ###### ContactComponent ###### */
+.contact {
+    margin: 3% 14%;
+}
+
+.contact p {
+    font-family: 'poppins500';
+    font-size: 1.4rem;
+    color: #828282;
+}
+
+.submitMail {
+    margin: 1.5rem 0;
+    background-color: #F2F2F2;
+    width: 28%;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.submitMail input {
+    width: 70%;
+    margin: 3px 0 3px 3px;
+    border: none;
+    border-radius: 12px;
+    background-color: #F2F2F2;
+    padding: 0 0 0 1rem;
+}
+
+.submitMail button {
+    background-color: #2D9CDB;
+    color: #F2F2F2;
+    margin: 3px 3px 3px 0;
+    font-size: 1.8rem;
+    padding: 1.2rem 0;
+    width: 30%;
+    border: none;
+    border-radius: 1.2rem;
+}
+
+.submitMail button:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07);
 }
