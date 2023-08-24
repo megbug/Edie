@@ -8,13 +8,13 @@ const AboutSection = () => {
         <section className='aboutSection'>
             <article>
                 <p>Meet the team</p>
-                <h3 className='subHeadline'>We are a chilled and laidback team</h3>
+                <h3 className='subHeadline'>We are chilled and a laidback team</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </article>
-            <div>
-                <img src={personA} alt='' />
-                <img src={personB} alt='' />
-                <img src={personC} alt='' />
+            <div className='imgSection'>
+                <img src={personC} alt='' id='c'/>
+                <img src={personA} alt='' id='a'/>
+                <img src={personB} alt='' id='b'/>
             </div>
         </section>
     )
