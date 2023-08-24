@@ -9,7 +9,7 @@ const WorkSection = () => {
     return (
         <section className='workSection' id='work'>
             <h3 className='subHeadline'>Good design means good business</h3>
-            <div>
+            <div className='imgDiv'>
                 <article>
                     <img src={smartHome} alt='' />
                     <h5>Fullstack application</h5>
@@ -21,7 +21,7 @@ const WorkSection = () => {
                     <h6>Onboard application</h6>
                 </article>
             </div>
-            <div>
+            <div className='imgDiv'>
                 <article>
                     <img src={booking} alt='' />
                     <h5>Mobile application</h5>
@@ -33,7 +33,7 @@ const WorkSection = () => {
                     <h6>Product homepage</h6>
                 </article>
             </div>
-            <Link>see more</Link>
+            <Link>see more &#8594;</Link>
         </section>
     )
 }
