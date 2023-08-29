@@ -28,8 +28,13 @@
     box-sizing: border-box;
 }
 
+
 html {
     font-size: 10px;
+}
+
+.mobile html {
+    font-size: 8px;
 }
 
 .heebo {
@@ -53,7 +58,7 @@ html {
 }
 
 /* ###### Navbar ###### */
-.header {
+.desktopHeader {
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -63,12 +68,58 @@ html {
     top: 0;
 }
 
-.nav a {
+.desktopHeader button {
+    display: none;
+}
+
+.desktopHeader .nav a {
     font-family: poppins500;
     font-size: 2.2rem;
     text-decoration: none;
     padding-left: 7rem;
     color: #333333;
+}
+
+.mobileHeader .nav {
+    display: none;
+}
+
+.mobileHeader {
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+.mobileHeader .mobileContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5% 4%;
+}
+
+.mobileHeader .mobileContainer button {
+    background-color: transparent;
+    border: none;
+    width: 40px;
+}
+
+.mobileHeader .menuItems {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 0 0 24px 24px;
+}
+
+.mobileHeader .menuItems a {
+    font-family: poppins500;
+    font-size: 2.2rem;
+    text-decoration: none;
+    padding: 10px 0;
+    color: #333333;
+}
+
+.mobileHeader .menuItems a:hover {
+    background-color: rgba(0,0,0,0.07);
 }
 
 /* ###### HeroSection ###### */

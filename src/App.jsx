@@ -1,8 +1,9 @@
 import { Routes, Route } from 'react-router-dom'; 
 
-import LandingPage from './LandingPage'
+import LandingPage from './LandingPage';
 
-import './App.css'
+import './App.css';
+import './Mediaquery.css';
 
 function App() {
 	return (

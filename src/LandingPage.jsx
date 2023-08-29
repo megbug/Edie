@@ -7,8 +7,11 @@ import ClientSection from "./assets/components/ClientSection"
 import Footer from "./assets/components/Footer"
 
 const LandingPage = () => {
+
+    let isDesktop = window.innerWidth < 501;
+
   return (
-    <>
+    <section className={isDesktop ? 'mobile' : 'desktop'}>
         <Navbar />
         <HeroSection />
         <ServiceSection />
@@ -16,7 +19,7 @@ const LandingPage = () => {
         <AboutSection />
         <ClientSection />
         <Footer />
-    </>
+    </section>
   )
 }
 

@@ -7,7 +7,7 @@ const HeroSection = () => {
             <h6>Unhappy with your Website?</h6>
             <div className='heroContainer'>
                 <article>
-                    <h2 className='headline'>We create beautiful and fast web sevices</h2>
+                    <h2 className='headline'>We create beautiful and fast web services</h2>
                 </article>
                 <img src={heroImg} alt='peopleInMeeting' />
                 <article>
